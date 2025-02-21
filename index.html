@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width'>
+<title>化学反応シミュレータ</title>
+<link rel='stylesheet' href='main.css'>
+
+</head>
+<body>
+
+<h1>化学反応シミュレータ</h1>
+
+<canvas id='canvas' width='600' height='400'></canvas>
+
+<h2>反応式</h2>
+<table>
+ <thead>
+  <tr>
+   <th>反応前</th>
+   <th>→</th>
+   <th>反応後</th>
+   <th>速度定数</th>
+   <th>削除</th>
+  </tr>
+ </thead>
+ 
+ <tbody id='formula'>
+ </tbody>
+ 
+ <tfoot>
+  <tr>
+   <td rowspan='0'>
+    <button id='addFormula'>反応式を追加</button>
+   </td>
+  </tr>
+ </tfoot>
+</table>
+
+<h2>初期濃度</h2>
+
+<table>
+ <thead>
+  <tr>
+   <th>化学式</th>
+   <th>初期濃度</th>
+   <th>グラフを描画</th>
+  </tr>
+ </thead>
+ 
+ <tbody id='firstConc'>
+ </tbody>
+</table>
+
+<h2>各種設定</h2>
+<p>
+ 時間：
+ <input type='number' id='maxTime' value='20' min='0'>
+</p>
+<p>
+ 微小時間変化：
+ <input type='number' id='deltaTime' value='0.01' min='0'>
+</p>
+<p>
+ <button id='draw'>グラフ描画</button>
+</p>
+
+<script src='input.js'></script>
+<script src='draw.js'></script>
+
+</body>
+
+</html>

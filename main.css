@@ -1,0 +1,41 @@
+body {
+ margin: 8px;
+}
+
+h2 {
+ background-color: rgb(255, 202, 87);
+}
+
+.formulaBefore, .formulaAfter {
+ max-width: 28vw;
+}
+
+.formulaArrow {
+ max-width: 8vw;
+ text-align: center;
+}
+
+.formulaSpeed {
+ max-width: 13vw;
+}
+
+.formulaDelete {
+ max-width: 13vw;
+}
+
+.FCMoleculeName {
+ max-width: 45vw;
+ overflow-wrap: break-word;
+}
+
+.FCMoleculeConc {
+ max-width: 30vw;
+}
+
+.FCMoleculeDraw {
+ max-width; min(25wv, 12em);
+}
+
+td:has(.FCMoleculeDraw) {
+ text-align: center;
+}
